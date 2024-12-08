@@ -1,0 +1,153 @@
+/*  START OF BODY SECTION   */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(186,225,255);
+    font-family: 'Poppins',sans-serif;
+}
+/*  END OF BODY SECTION */
+/*  START OF NAVIGATION SECTION */
+ul img{
+    height: 2.5em;
+    width: 2.5em;
+}
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    background-color: rgb(206, 203, 203);
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:   rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+.logout-item {
+    margin-left: auto;
+}
+
+.logout-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 8px;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}
+
+.logout-btn:focus {
+    outline: none;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+/*  END OF NAVIGATION SECTION   */
+.body{
+    border: 1px solid transparent;
+    border-radius: 2em;
+    text-align: center;
+    width: 50vw;
+    margin: 2em auto;
+    background-color: gray;
+    color: white;
+    padding: 1em;
+}
+.year{
+    border: 1px solid transparent;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 1vw;
+}
+.info table{
+    margin: 1em auto;
+    padding: 0.5em 1em 0.5em 1em;
+}
+.info{
+    font-size: 1vw;
+}
+td{
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0.5em;
+}
+.header{
+    font-size: 1vw;
+}
+.header img{
+    width: 30%;
+    height: 30%;
+}

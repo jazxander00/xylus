@@ -1,0 +1,129 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9fafb;
+    transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #6366f1;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding: 12px 40px 12px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9fafb;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23000000" viewBox="0 0 24 24"%3E%3Cpath d="M12 4.5c-4.97 0-9.17 3.59-10 8.5.83 4.91 5.03 8.5 10 8.5s9.17-3.59 10-8.5c-.83-4.91-5.03-8.5-10-8.5zm0 15c-3.87 0-7.15-2.91-7.82-7 0 0 3.02-5.03 7.82-5 4.79-.03 7.82 5 7.82 5-.67 4.09-3.95 7-7.82 7zM12 9c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3z"%3E%3C/path%3E%3C/svg%3E');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#togglePassword.active {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23000000" viewBox="0 0 24 24"%3E%3Cpath d="M12 4.5c-4.97 0-9.17 3.59-10 8.5.83 4.91 5.03 8.5 10 8.5s9.17-3.59 10-8.5c-.83-4.91-5.03-8.5-10-8.5zm0 15c-3.87 0-7.15-2.91-7.82-7 0 0 3.02-5.03 7.82-5 4.79-.03 7.82 5 7.82 5-.67 4.09-3.95 7-7.82 7zM12 9c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3zm-8.54-5.9 18 18-1.42 1.42-18-18 1.42-1.42z"%3E%3C/path%3E%3C/svg%3E');
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #6366f1;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #4f46e5;
+}
+
+.message {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.message a {
+    color: #6366f1;
+    text-decoration: none;
+}
+
+.message a:hover {
+    text-decoration: underline;
+}

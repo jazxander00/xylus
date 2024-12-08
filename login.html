@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <form class="login-form" id="loginForm">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required placeholder="Enter your username">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <p class="message">Not registered? <a href="signup.html">Create an account</a></p>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById('loginForm');
+            
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                // Get stored user info from localStorage
+                const storedUser = JSON.parse(localStorage.getItem('user'));
+
+                if (storedUser && storedUser.username === username && storedUser.password === password) {
+                    alert('Login successful!');
+                    window.location.href = 'home.html'; // Redirect to home page
+                } else {
+                    alert('Invalid username or password.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

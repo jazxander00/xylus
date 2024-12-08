@@ -1,0 +1,318 @@
+/*  START OF BODY SECTION   */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(186,225,255);
+    font-family: 'Poppins',sans-serif;
+}
+/*  END OF BODY SECTION */
+/*  START OF NAVIGATION SECTION */
+ul img{
+    height: 2.5em;
+    width: 2.5em;
+}
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    background-color: rgb(206, 203, 203);
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:   rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+.logout-item {
+    margin-left: auto;
+}
+
+.logout-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 8px;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}
+
+.logout-btn:focus {
+    outline: none;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+/*  END OF NAVIGATION SECTION   */
+/*  PRODUCTS    */
+/*  FIRST */
+.first{
+    border: 1px solid;
+    width: 40vw;
+    margin: 1% auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1em;
+    border-radius: 1em;
+    color: white;
+    text-align: center;
+}
+.first h2{
+    font-size: 2vw;
+}
+.first img{
+    height: 50%;
+    width: 50%;
+}
+.first-buttons a{
+    border: 1px solid;
+    border-radius: 5em;
+    text-decoration: none;
+    color: ghostwhite;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    font-size: 1.2vw;
+    transition: 0.5s;
+}
+.first-buttons{
+    margin: 1em auto;
+}
+.first-buttons a:hover{
+    padding: 1em;
+    font-size: 1em;
+    background-color: white;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 3px black,
+                    1px 1px 5px blue,
+                        1px 1px 6px black,
+                            1px 1px 6px black;
+}
+/*  SECOND  */
+.second{
+    border: 1px solid;
+    width: 40vw;
+    margin: 1% auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1em;
+    border-radius: 1em;
+    color: white;
+    text-align: center;
+}
+.second h2{
+    font-size: 2vw;
+}
+.second img{
+    height: 50%;
+    width: 50%;
+}
+.second-buttons a{
+    border: 1px solid;
+    border-radius: 5em;
+    text-decoration: none;
+    color: ghostwhite;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    font-size: 1.2vw;
+    transition: 0.5s;
+}
+.second-buttons{
+    margin: 1em auto;
+}
+.second-buttons a:hover{
+    padding: 1em;
+    font-size: 1em;
+    background-color: white;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 3px black,
+                    1px 1px 5px blue,
+                        1px 1px 6px black,
+                            1px 1px 6px black;
+}
+/*  THIRD   */
+.third{
+    border: 1px solid;
+    width: 40vw;
+    margin: 1% auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1em;
+    border-radius: 1em;
+    color: white;
+    text-align: center;
+}
+.third h2{
+    font-size: 2vw;
+}
+.third img{
+    height: 50%;
+    width: 50%;
+}
+.third-buttons a{
+    border: 1px solid;
+    border-radius: 5em;
+    text-decoration: none;
+    color: ghostwhite;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    font-size: 1.2vw;
+    transition: 0.5s;
+}
+.third-buttons{
+    margin: 1em auto;
+}
+.third-buttons a:hover{
+    padding: 1em;
+    font-size: 1em;
+    background-color: white;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 3px black,
+                    1px 1px 5px blue,
+                        1px 1px 6px black,
+                            1px 1px 6px black;
+}
+/*  FOURTH  */
+.fourth{
+    border: 1px solid;
+    width: 40vw;
+    margin: 1% auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1em;
+    border-radius: 1em;
+    color: white;
+    text-align: center;
+}
+.fourth h2{
+    font-size: 2vw;
+}
+.fourth img{
+    height: 50%;
+    width: 50%;
+}
+.fourth-buttons a{
+    border: 1px solid;
+    border-radius: 5em;
+    text-decoration: none;
+    color: ghostwhite;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    font-size: 1.2vw;
+    transition: 0.5s;
+}
+.fourth-buttons{
+    margin: 1em auto;
+}
+.fourth-buttons a:hover{
+    padding: 1em;
+    font-size: 1em;
+    background-color: white;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 3px black,
+                    1px 1px 5px blue,
+                        1px 1px 6px black,
+                            1px 1px 6px black;
+}
+/*  FIFTH   */
+.fifth{
+    border: 1px solid;
+    width: 40vw;
+    margin: 1% auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1em;
+    border-radius: 1em;
+    color: white;
+    text-align: center;
+}
+.fifth h2{
+    font-size: 2vw;
+}
+.fifth img{
+    height: 50%;
+    width: 50%;
+}
+.fifth-buttons a{
+    border: 1px solid;
+    border-radius: 5em;
+    text-decoration: none;
+    color: ghostwhite;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    font-size: 1.2vw;
+    transition: 0.5s;
+}
+.fifth-buttons{
+    margin: 1em auto;
+}
+.fifth-buttons a:hover{
+    padding: 1em;
+    font-size: 1em;
+    background-color: white;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 3px black,
+                    1px 1px 5px blue,
+                        1px 1px 6px black,
+                            1px 1px 6px black;
+}
